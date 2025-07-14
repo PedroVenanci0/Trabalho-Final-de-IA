@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Mestre da Taverna | Aventura de Pedro</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-stone-900 flex items-center justify-center min-h-screen p-4">
+
+    <div class="w-full max-w-2xl h-[90vh] flex flex-col bg-black border-4 border-amber-500 rounded-lg shadow-[0_0_25px_rgba(245,158,11,0.3)]">
+        
+        <header class="bg-transparent p-4 text-center border-b-4 border-amber-500">
+            <h1 class="text-3xl text-amber-300">O Mestre da Taverna</h1>
+        </header>
+
+        <main id="chat-messages" class="flex-1 p-6 overflow-y-auto">
+            <div class="message bot-message">
+                <p>Aproxime-se, aventureiro. O que o traz à minha mesa? Diga-me o que precisa ou peça uma rolagem de dados (ex: 1d20, 2d6+3).</p>
+            </div>
+        </main>
+
+        <footer class="p-4 border-t-2 border-amber-500/50 bg-transparent">
+            <div class="flex items-center space-x-4">
+                <label for="image-upload" class="cursor-pointer p-2 rounded-full hover:bg-amber-900/50 transition-colors" title="Enviar um mapa ou ficha">
+                    <svg class="w-7 h-7 text-amber-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M2.25 2.25a.75.75 0 0 0-.75.75v11.25a.75.75 0 0 0 .75.75h6.162a3.749 3.749 0 0 1 5.176 0h6.162a.75.75 0 0 0 .75-.75V3a.75.75 0 0 0-.75-.75H2.25ZM9.52 6.233a.75.75 0 0 1 1.06 0l1.72 1.72a.75.75 0 1 1-1.06 1.06L9.52 7.294a.75.75 0 0 1 0-1.06ZM12 18a2.25 2.25 0 1 0 0-4.5 2.25 2.25 0 0 0 0 4.5Z"></path><path d="M15.75 15a.75.75 0 0 0-.75.75v4.5a.75.75 0 0 0 .75.75h4.5a.75.75 0 0 0 .75-.75v-4.5a.75.75 0 0 0-.75-.75h-4.5Z"></path></svg>
+                </label>
+                <input type="file" id="image-upload" class="hidden" accept="image/*">
+                <input type="text" id="text-input" class="flex-1 bg-black/50 text-amber-200 border-2 border-stone-600 rounded-full px-5 py-2 focus:outline-none focus:ring-2 focus:ring-amber-400" placeholder="Escreva sua dúvida, aventureiro...">
+                <button id="send-button" class="bg-yellow-800 text-amber-100 p-3 rounded-full hover:bg-amber-400 hover:text-stone-900 transition-colors">
+                    <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19.423 3.14a.75.75 0 0 0-.738-.02L4.01 9.014a.75.75 0 0 0 .022 1.383l5.587 1.862a.75.75 0 0 1 .45.45l1.862 5.587a.75.75 0 0 0 1.383.022l5.894-14.675a.75.75 0 0 0-.02-.738Z"></path></svg>
+                </button>
+            </div>
+        </footer>
+    </div>
+
+    <div id="dice-overlay">
+        <div id="dice-tray"></div>
+    </div>
+    
+    <script src="script.js" defer></script>
+</body>
+</html>

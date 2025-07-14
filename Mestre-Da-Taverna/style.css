@@ -1,0 +1,49 @@
+/* Importando fontes com estilo de fantasia do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&family=Merriweather:wght@400;700&display=swap');
+
+body {
+    font-family: 'Merriweather', serif;
+    font-size: 1.1rem;
+}
+
+h1, button, input::placeholder {
+    font-family: 'MedievalSharp', cursive;
+}
+
+/* Barra de rolagem com tema rústico */
+#chat-messages::-webkit-scrollbar { width: 8px; }
+#chat-messages::-webkit-scrollbar-track { background: #44403c; }
+#chat-messages::-webkit-scrollbar-thumb { background-color: #a16207; border-radius: 10px; }
+
+/* Estilos para as "bolhas" de mensagem */
+.message { max-width: 80%; padding: 12px 18px; border-radius: 15px; margin-bottom: 1rem; line-height: 1.7; }
+.user-message { background-color: #991b1b; color: #fef3c7; margin-left: auto; border-bottom-right-radius: 5px; }
+.bot-message { background-color: #292524; color: #d6d3d1; margin-right: auto; border-bottom-left-radius: 5px; }
+
+/* Estilos para o Rolador de Dados */
+#dice-overlay {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); backdrop-filter: blur(4px);
+    display: flex; align-items: center; justify-content: center; z-index: 50;
+    opacity: 0; transition: opacity 0.3s ease; pointer-events: none;
+}
+#dice-overlay.visible { opacity: 1; pointer-events: auto; }
+#dice-tray {
+    background-color: #57534e;
+    background-image: url('https://www.transparenttextures.com/patterns/felt.png');
+    padding: 2rem; border: 8px solid #44403c;
+    border-radius: 1rem; box-shadow: 0 0 30px rgba(0,0,0,0.5);
+    display: flex; gap: 1.5rem; flex-wrap: wrap; justify-content: center;
+}
+.die {
+    width: 80px; height: 80px; background-color: #fef3c7;
+    color: #44403c; border: 2px solid #a16207; border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 2.5rem; font-weight: bold; font-family: 'Merriweather', serif;
+    animation: roll 1s ease-out;
+}
+@keyframes roll {
+    0% { transform: rotate(0deg) scale(0.5); opacity: 0; }
+    60% { transform: rotate(720deg) scale(1.2); }
+    100% { transform: rotate(720deg) scale(1); opacity: 1; }
+}
