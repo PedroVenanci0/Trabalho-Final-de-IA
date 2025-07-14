@@ -2,7 +2,7 @@
 
 Este repositório contém o desenvolvimento do projeto final da disciplina de Inteligência Artificial, ministrada pelo professor Otilio Paulo no Instituto Federal de Educação, Ciência e Tecnologia do Piauí (IFPI).
 
-O projeto é composto por duas atividades principais, cujos detalhes, tecnologias e acessos estão descritos abaixo. A data de entrega para ambas as atividades é **14 de julho de 2025**.
+O projeto é composto por duas atividades principais, cujos detalhes, tecnologias e acessos estão descritos abaixo. 
 
 ---
 
