@@ -24,7 +24,7 @@ O objetivo desta atividade é implementar uma Rede Neural Convolucional (CNN) pa
 O código completo e a implementação desta rede neural estão disponíveis em um notebook do Google Colab.
 
 **Acesso ao Projeto:**
-* [Clique aqui para abrir o notebook no Google Colab](https://colab.research.google.com/) *(Substitua pelo seu link real)*
+* [Clique aqui para abrir o notebook no Google Colab](https://colab.research.google.com/drive/1cxzTz4tbk3GiB0eCTwi0_Jqbiw14hR-k?usp=sharing) 
 
 **Dataset Utilizado:**
 * O projeto utiliza o [Conjunto de dados de imagens de arroz](https://data.mendeley.com/datasets/zn7hnsfgrs/1), disponível na plataforma Mendeley Data.
